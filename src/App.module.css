@@ -1,0 +1,94 @@
+.app {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  min-width: 280px;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: black;
+  z-index: -10;
+  margin: 0;
+  overflow: hidden;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 80%;
+  min-width: 360px;
+  flex: 1.5;
+}
+
+.solutionContainer {
+  border-top: 2px solid lightgray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  flex: 0.5;
+}
+
+.solution {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: lightgray;
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  height: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+  width: 200px;
+  color: green;
+  border: 3px solid green;
+  border-radius: 50px;
+  padding: 2px;
+  font-size: 2rem;
+}
+
+.button:hover {
+  scale: 1.1;
+  transition: all 0.1s ease;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .board {
+    gap: 10px;
+    padding: 5px;
+    margin: 5px;
+    width: 80%;
+  }
+
+  .button {
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    padding: 1px;
+    font-size: 1rem;
+  }
+
+  .solution {
+    font-size: 2rem;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+  }
+}

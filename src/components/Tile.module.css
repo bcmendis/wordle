@@ -1,0 +1,48 @@
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border: 2px solid lightgrey;
+  border-radius: 10px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: lightgray;
+}
+
+.correct {
+  border: 2px solid darkgreen;
+  background-color: lightgreen;
+  color: green;
+}
+
+.close {
+  border: 2px solid darkorange;
+  background-color: lightgoldenrodyellow;
+  color: darkorange;
+}
+
+.incorrect {
+  border: 2px solid rgb(105, 105, 105);
+  background-color: darkgray;
+  color: rgb(80, 80, 80);
+}
+
+@media only screen and (max-width: 600px) {
+  .letter {
+    max-width: 50px;
+    max-height: 50px;
+    font-size: 2rem;
+    border-radius: 5px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .letter {
+    max-width: 40px;
+    max-height: 40px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+  }
+}
