@@ -2,7 +2,6 @@ import React from "react";
 import classes from "./Tile.module.css";
 
 const Tile = (props) => {
-  console.log(props.styles);
   return (
     <div
       className={`${classes.letter} ${

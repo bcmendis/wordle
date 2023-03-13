@@ -6,8 +6,6 @@ import classes from "./Line.module.css";
 const tempWord = new Array(5).fill(" ");
 
 const Line = (props) => {
-  console.log(tempWord);
-
   const { solution, guess } = props;
 
   if (guess === " ") {
@@ -26,7 +24,6 @@ const Line = (props) => {
     const char = guess[i];
     let styles = "";
     if (props.isFinal) {
-      console.log(char);
       if (solution[i] === char) {
         styles += "correct";
       } else if (solution.includes(guess[i])) {
