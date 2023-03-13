@@ -4,7 +4,32 @@ import Line from "./components/Line";
 
 import classes from "./App.module.css";
 
-const DUMMY_WORDS = ["ALBUM", "HINGE", "MONEY", "SCRAP", "GAMER"];
+const DUMMY_WORDS = [
+  "ALBUM",
+  "HINGE",
+  "MONEY",
+  "SCRAP",
+  "GAMER",
+  "GLASS",
+  "COVER",
+  "SCOUR",
+  "BEING",
+  "DELVE",
+  "YEILD",
+  "METAL",
+  "TIPSY",
+  "SLUNG",
+  "FARCE",
+  "GECKO",
+  "SHINE",
+  "CANNY",
+  "MIDST",
+  "BADGE",
+  "HOMER",
+  "TRAIN",
+  "STORY",
+  "HAIRY",
+];
 const selectedWord =
   DUMMY_WORDS[Math.floor(Math.random() * (DUMMY_WORDS.length - 1))];
 
