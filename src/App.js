@@ -1,4 +1,4 @@
-import { Fragment, useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 import Line from "./components/Line";
 
@@ -30,13 +30,12 @@ const DUMMY_WORDS = [
   "STORY",
   "HAIRY",
 ];
-const selectedWord =
+const solution =
   DUMMY_WORDS[Math.floor(Math.random() * (DUMMY_WORDS.length - 1))];
 
 const regex = /^[A-Za-z]{1}$/;
 
 function App() {
-  const [solution, setSolution] = useState(selectedWord);
   const [guesses, setGuesses] = useState(Array(6).fill(null));
   const [currentGuess, setCurrentGuess] = useState("");
   const [isGameOver, setIsGameOver] = useState(false);
@@ -74,7 +73,7 @@ function App() {
     window.addEventListener("keydown", inputHandler);
 
     return () => window.removeEventListener("keydown", inputHandler);
-  }, [currentGuess, isGameOver, solution, guesses]);
+  }, [currentGuess, isGameOver, guesses]);
 
   const showSolutionHandler = () => {
     setShowSolution(!showSolution);
