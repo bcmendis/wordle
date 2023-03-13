@@ -42,8 +42,6 @@ function App() {
   const [isGameOver, setIsGameOver] = useState(false);
   const [showSolution, setShowSolution] = useState(false);
 
-  console.log("Solution:", solution);
-
   useEffect(() => {
     const inputHandler = (event) => {
       if (isGameOver) return;
@@ -63,7 +61,6 @@ function App() {
 
       if (event.key === "Backspace") {
         setCurrentGuess((oldguess) => oldguess.slice(0, -1));
-        console.log(currentGuess);
         return;
       }
 
